@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://breeze-kaduna.netlify.app/sitemap.xml

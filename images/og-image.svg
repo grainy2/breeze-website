@@ -1,0 +1,11 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#1F1F1C"/>
+  <rect x="30" y="30" width="1140" height="570" rx="32" stroke="#3D3D36" stroke-width="2"/>
+  <circle cx="600" cy="220" r="70" fill="#721C2B" stroke="#3D3D36" stroke-width="3"/>
+  <text x="600" y="242" font-family="'Bodoni Moda', 'Playfair Display', Georgia, serif" font-size="64" font-weight="900" fill="#F3ECE2" text-anchor="middle">B</text>
+  <text x="600" y="360" font-family="'Bodoni Moda', 'Playfair Display', Georgia, serif" font-size="76" font-weight="800" letter-spacing="2" fill="#F3ECE2" text-anchor="middle">Breeze</text>
+  <text x="600" y="405" font-family="'Inter', sans-serif" font-size="18" font-weight="600" letter-spacing="6" fill="#B5ADA3" text-anchor="middle">RESTAURANT &amp; LOUNGE • KADUNA</text>
+  <text x="600" y="470" font-family="'Inter', sans-serif" font-size="22" font-weight="400" fill="#F3ECE2" text-anchor="middle">Asian-Inspired Dining, Succulent Grills &amp; Verdant Garden Lounge</text>
+  <rect x="490" y="520" width="220" height="44" rx="22" fill="#721C2B"/>
+  <text x="600" y="548" font-family="'Inter', sans-serif" font-size="16" font-weight="700" fill="#F3ECE2" text-anchor="middle">breeze-menu.netlify.app</text>
+</svg>

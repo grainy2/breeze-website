@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breeze Restaurant &amp; Lounge | Kaduna</title>
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Breeze Restaurant &amp; Lounge | Kaduna">
+  <meta name="description" content="Asian-inspired dining, succulent grills, and serene garden lounge in Kaduna. View our digital menu, explore featured dishes, and call to order.">
+  <meta name="theme-color" content="#1F1F1C">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://breeze-menu.netlify.app/">
+  <meta property="og:title" content="Breeze Restaurant &amp; Lounge | Kaduna">
+  <meta property="og:description" content="Asian-inspired dining, succulent grills, and serene garden lounge in Kaduna. View our digital menu and order.">
+  <meta property="og:image" content="images/og-image.svg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Breeze Restaurant &amp; Lounge | Kaduna">
+  <meta property="twitter:description" content="Asian-inspired dining, succulent grills, and serene garden lounge in Kaduna.">
+  <meta property="twitter:image" content="images/og-image.svg">
+
+  <!-- Favicon (Fork & Spoon Icon) -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="favicon.svg">
+
+  <!-- Google Fonts: Bodoni Moda (Didone Serif) & Inter (Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- LocalBusiness Schema (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Breeze Restaurant & Lounge",
+    "image": "https://breeze-menu.netlify.app/images/og-image.svg",
+    "url": "https://breeze-menu.netlify.app",
+    "telephone": "TODO: PHONE",
+    "servesCuisine": ["Pan-Asian", "Grill", "Continental", "Nigerian"],
+    "priceRange": "₦₦",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "TODO: ADDRESS",
+      "addressLocality": "Kaduna",
+      "addressRegion": "Kaduna State",
+      "addressCountry": "NG"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 10.5105,
+      "longitude": 7.4165
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "12:00",
+        "closes": "23:00"
+      }
+    ],
+    "menu": "https://breeze-menu.netlify.app"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="#" class="brand-logo" aria-label="Breeze Restaurant and Lounge Home">
+        <div class="brand-mark" aria-hidden="true">B</div>
+        <div class="brand-text">
+          <span class="brand-title">Breeze</span>
+          <span class="brand-subtitle">Kaduna</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#featured" class="nav-link">Featured Dishes</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#hours" class="nav-link">Hours &amp; Location</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Navbar Actions -->
+      <div class="nav-actions">
+        <a href="https://breeze-menu.netlify.app" class="btn btn-maroon" target="_blank" rel="noopener noreferrer">
+          <span>Digital Menu</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17l9.2-9.2M17 17V7.8H7.8"/></svg>
+        </a>
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-tagline-badge">
+            <span class="accent">Kaduna's Premier Dining Lounge</span>
+          </div>
+          <h1 class="hero-heading">
+            Culinary Elegance, Unhurried Comfort.
+          </h1>
+          <p class="hero-description">
+            Experience our celebrated blend of vibrant Asian-inspired wok dishes, slow-charred grills, and artisanal cocktails in an ambient indoor lounge and serene garden courtyard.
+          </p>
+          <div class="hero-cta-group">
+            <a href="https://breeze-menu.netlify.app" class="btn btn-maroon btn-lg" target="_blank" rel="noopener noreferrer">
+              <span>View Live Menu</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17l9.2-9.2M17 17V7.8H7.8"/></svg>
+            </a>
+            <a href="tel:TODO: PHONE" class="btn btn-outline btn-lg" id="heroCallBtn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>Call to Order</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image-wrap">
+          <div class="hero-image-frame">
+            <img src="images/gallery-lounge-terrace.svg" alt="Breeze Restaurant &amp; Lounge outdoor seating and ambience" width="560" height="700">
+            <div class="hero-floating-badge">
+              <span class="badge-label">Kaduna Ambiance</span>
+              <span class="badge-value">Garden &amp; Lounge</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. About Section -->
+    <section class="about-section" id="about">
+      <div class="container about-grid">
+        <div class="about-image-wrap">
+          <div class="hero-image-frame" style="aspect-ratio: 16/11;">
+            <img src="images/gallery-evening-interior.svg" alt="Breeze interior restaurant dining room" width="600" height="412">
+          </div>
+        </div>
+        <div class="about-card">
+          <span class="section-eyebrow">Our Philosophy</span>
+          <h3>An Oasis of Taste &amp; Hospitality</h3>
+          <p>
+            Breeze Restaurant &amp; Lounge was born from a desire to create a calm, refined retreat in the heart of Kaduna. Our culinary team brings together traditional wok techniques, hand-glazed skewers, and rich comforting pastas crafted with locally sourced, premium ingredients.
+          </p>
+          <p>
+            Whether you are catching up over lunch on the garden terrace, hosting an intimate dinner, or ordering your favorite dishes to enjoy at home, Breeze provides hospitality centered around memorable flavors.
+          </p>
+          <div class="about-highlights">
+            <div>
+              <div class="highlight-num">20+</div>
+              <div class="highlight-label">Signature Dishes</div>
+            </div>
+            <div>
+              <div class="highlight-num">100%</div>
+              <div class="highlight-label">Fresh Daily Prep</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Featured Dishes Section -->
+    <section class="featured-section" id="featured">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Chef's Highlights</span>
+          <h2 class="section-title">Featured Menu Selections</h2>
+          <p class="section-subtitle">
+            A small taste of our most beloved creations, cooked to order with authentic pan-Asian spices and house marinades.
+          </p>
+        </div>
+
+        <div class="dishes-grid">
+          <!-- Dish 1 -->
+          <article class="dish-card">
+            <span class="dish-badge">Popular</span>
+            <div class="dish-photo-wrap">
+              <img src="images/honey-glazed-wings.webp" alt="Honey Glazed Chicken Wings" width="140" height="140" loading="lazy">
+            </div>
+            <div class="dish-info">
+              <span class="dish-category">Appetizers</span>
+              <h3 class="dish-name">Honey Glazed Wings</h3>
+              <p class="dish-desc">Crisp fried chicken wings tossed in our sweet and savory sticky honey ginger glaze.</p>
+              <div class="dish-footer">
+                <span class="dish-price">₦7,500</span>
+                <a href="https://breeze-menu.netlify.app" class="dish-order-link" target="_blank" rel="noopener noreferrer">Order ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dish 2 -->
+          <article class="dish-card">
+            <span class="dish-badge">Chef's Pick</span>
+            <div class="dish-photo-wrap">
+              <img src="images/prawn-mayo-spring-rolls.webp" alt="Prawn &amp; Mayo Spring Rolls" width="140" height="140" loading="lazy">
+            </div>
+            <div class="dish-info">
+              <span class="dish-category">Appetizers</span>
+              <h3 class="dish-name">Prawn &amp; Mayo Spring Rolls</h3>
+              <p class="dish-desc">Golden crisp hand-rolled pastry filled with succulent seasoned tiger prawns and creamy mayo dip.</p>
+              <div class="dish-footer">
+                <span class="dish-price">₦8,500</span>
+                <a href="https://breeze-menu.netlify.app" class="dish-order-link" target="_blank" rel="noopener noreferrer">Order ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dish 3 -->
+          <article class="dish-card">
+            <span class="dish-badge">Signature</span>
+            <div class="dish-photo-wrap">
+              <img src="images/pad-thai-noodles.webp" alt="Pad Thai Noodles" width="140" height="140" loading="lazy">
+            </div>
+            <div class="dish-info">
+              <span class="dish-category">Noodles &amp; Pasta</span>
+              <h3 class="dish-name">Pad Thai Noodles</h3>
+              <p class="dish-desc">Wok-fired rice noodles with bean sprouts, scallions, crushed peanuts, and tangy tamarind lime sauce.</p>
+              <div class="dish-footer">
+                <span class="dish-price">₦9,500</span>
+                <a href="https://breeze-menu.netlify.app" class="dish-order-link" target="_blank" rel="noopener noreferrer">Order ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dish 4 -->
+          <article class="dish-card">
+            <div class="dish-photo-wrap">
+              <img src="images/chicken-penne-arrabbiata.webp" alt="Chicken Penne Arrabbiata" width="140" height="140" loading="lazy">
+            </div>
+            <div class="dish-info">
+              <span class="dish-category">Noodles &amp; Pasta</span>
+              <h3 class="dish-name">Chicken Penne Arrabbiata</h3>
+              <p class="dish-desc">Al dente penne folded in a zesty fiery tomato basil sauce with grilled chicken breast and shaved cheese.</p>
+              <div class="dish-footer">
+                <span class="dish-price">₦9,000</span>
+                <a href="https://breeze-menu.netlify.app" class="dish-order-link" target="_blank" rel="noopener noreferrer">Order ↗</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="featured-cta-box">
+          <a href="https://breeze-menu.netlify.app" class="btn btn-maroon btn-lg" target="_blank" rel="noopener noreferrer">
+            <span>Explore Complete Digital Menu (22+ Dishes)</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17l9.2-9.2M17 17V7.8H7.8"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Gallery Section -->
+    <section class="gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Visual Moments</span>
+          <h2 class="section-title">Atmosphere &amp; Plates</h2>
+          <p class="section-subtitle">
+            Take a glance into our inviting spaces and artfully plated specialties.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="images/gallery-lounge-terrace.svg" alt="Garden Terrace Dining Area" width="400" height="300" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-category">Outdoor Space</span>
+              <span class="gallery-title">Garden Terrace</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery-evening-interior.svg" alt="Evening Dining Room" width="400" height="300" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-category">Indoor Dining</span>
+              <span class="gallery-title">Evening Glow</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery-rattan-seating.svg" alt="Cozy Lounge Seating" width="400" height="300" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-category">Lounge</span>
+              <span class="gallery-title">Rattan Lounge Corner</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/gallery-guests-garden.svg" alt="Guests Enjoying Breeze" width="400" height="300" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-category">Gatherings</span>
+              <span class="gallery-title">Social Courtyard</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/bbq-chicken-wings.webp" alt="BBQ Chicken Wings Platter" width="400" height="300" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-category">From the Kitchen</span>
+              <span class="gallery-title">Smoky BBQ Wings</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="images/chow-mein-noodles.webp" alt="Wok Chow Mein Noodles" width="400" height="300" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-category">From the Wok</span>
+              <span class="gallery-title">Classic Chow Mein</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Opening Hours & 6. Location Section -->
+    <section class="info-section" id="hours">
+      <div class="container info-grid">
+        <!-- Opening Hours -->
+        <div class="info-card">
+          <div>
+            <div class="info-card-header">
+              <div class="info-icon" aria-hidden="true">⏱</div>
+              <h2 class="info-card-title">Opening Hours</h2>
+            </div>
+            <table class="hours-table">
+              <tbody>
+                <tr>
+                  <td class="day">Monday – Thursday</td>
+                  <td class="time">TODO: OPENING_HOURS (12:00 PM – 11:00 PM)</td>
+                </tr>
+                <tr>
+                  <td class="day">Friday – Saturday</td>
+                  <td class="time">TODO: OPENING_HOURS (12:00 PM – 12:00 AM)</td>
+                </tr>
+                <tr>
+                  <td class="day">Sunday</td>
+                  <td class="time">TODO: OPENING_HOURS (1:00 PM – 11:00 PM)</td>
+                </tr>
+                <tr>
+                  <td class="day">Kitchen Last Call</td>
+                  <td class="time">45 minutes before closing</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="text-muted" style="font-size: 13px;">
+            Walk-ins are warmly welcomed. For group dining and private lounge reservations, please call in advance.
+          </p>
+        </div>
+
+        <!-- Location & Map -->
+        <div class="info-card" id="location">
+          <div>
+            <div class="info-card-header">
+              <div class="info-icon" aria-hidden="true">📍</div>
+              <h2 class="info-card-title">Find Us in Kaduna</h2>
+            </div>
+            <p class="location-address">
+              <strong>Address:</strong> TODO: ADDRESS<br>
+              <span class="text-muted">Kaduna, Kaduna State, Nigeria</span>
+            </p>
+            <div class="map-container">
+              <!-- Google Maps Embed for Kaduna -->
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62817.38753239294!2d7.391749848632813!3d10.518693899999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104d3550b07bb905%3A0xb35a0fbf02a4bfbc!2sKaduna%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1710000000000!5m2!1sen!2sng" 
+                title="Breeze Restaurant &amp; Lounge Location Map"
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+          <a href="https://maps.google.com/?q=Kaduna+Nigeria" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="align-self: flex-start;">
+            <span>Open in Google Maps ↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Connect</span>
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="section-subtitle">
+            Order for pickup or delivery, book a table, or reach our concierge team.
+          </p>
+        </div>
+
+        <div class="contact-channels">
+          <!-- Telephone -->
+          <div class="channel-card">
+            <div class="channel-icon" aria-hidden="true">📞</div>
+            <h3 class="channel-title">Phone</h3>
+            <p class="channel-detail">TODO: PHONE (+234 800 000 0000)</p>
+            <a href="tel:TODO: PHONE" class="btn btn-maroon btn-sm">Call Direct</a>
+          </div>
+
+          <!-- WhatsApp -->
+          <div class="channel-card">
+            <div class="channel-icon" aria-hidden="true">💬</div>
+            <h3 class="channel-title">WhatsApp</h3>
+            <p class="channel-detail">TODO: WHATSAPP (+234 800 000 0000)</p>
+            <a href="https://wa.me/TODO: WHATSAPP" target="_blank" rel="noopener noreferrer" class="btn btn-maroon btn-sm">Chat on WhatsApp</a>
+          </div>
+
+          <!-- Instagram -->
+          <div class="channel-card">
+            <div class="channel-icon" aria-hidden="true">📸</div>
+            <h3 class="channel-title">Instagram</h3>
+            <p class="channel-detail">TODO: INSTAGRAM (@breeze_kaduna)</p>
+            <a href="https://instagram.com/TODO: INSTAGRAM" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Follow Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-brand">
+        <span class="brand-title" style="font-size: 26px;">Breeze</span>
+        <p class="brand-subtitle" style="margin-top: 4px;">Restaurant &amp; Lounge • Kaduna</p>
+      </div>
+      <p class="footer-copy" style="margin-bottom: 8px;">
+        &copy; <span id="currentYear"></span> Breeze Restaurant &amp; Lounge. All rights reserved.
+      </p>
+      <p class="footer-copy text-muted" style="font-size: 11px;">
+        Photos are illustrative. Actual presentation may vary.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Mobile Sticky Bottom Action Bar -->
+  <div class="mobile-bottom-bar" role="region" aria-label="Quick Actions">
+    <a href="tel:TODO: PHONE" class="btn btn-outline">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span>Call</span>
+    </a>
+    <a href="https://breeze-menu.netlify.app" class="btn btn-maroon" target="_blank" rel="noopener noreferrer">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+      <span>Menu</span>
+    </a>
+    <a href="#location" class="btn btn-outline">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      <span>Map</span>
+    </a>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
