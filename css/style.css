@@ -1,8 +1,8 @@
 /* ==========================================================================
    Breeze Restaurant & Lounge (Kaduna) - Modern Responsive Stylesheet
-   Palette: Charcoal & Cream (Dark) / Crisp Off-White (Light) + Brand Maroon (#721C2B)
+   Palette: Soft Warm Charcoal (#232320) & Cream (Dark) / Crisp Off-White (Light) + Brand Maroon (#842234)
    Typography: Bodoni Moda (Didone Serif) & Inter (Clean Sans)
-   Mobile-First & Phone Ready
+   Mobile-First & Fully Responsive (Phone-Ready)
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
@@ -10,9 +10,9 @@
    -------------------------------------------------------------------------- */
 :root {
   /* Brand Constants */
-  --brand-maroon: #721C2B;
-  --brand-maroon-hover: #8A2335;
-  --brand-maroon-active: #5D1623;
+  --brand-maroon: #842234;
+  --brand-maroon-hover: #9B293E;
+  --brand-maroon-active: #6E1B2A;
   --font-serif: 'Bodoni Moda', 'Playfair Display', Georgia, serif;
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --container-max: 1200px;
@@ -23,63 +23,63 @@
   --transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
   --header-height: 64px;
 
-  /* Default Dark Mode Values */
-  --bg-page: #1F1F1C;
-  --bg-section-alt: #181815;
-  --surface-header: rgba(31, 31, 28, 0.94);
-  --surface-card: #262622;
-  --surface-raised: #2F2F2A;
-  --border-subtle: #3D3D36;
-  --border-card: #383832;
-  --text-primary: #F3ECE2;
-  --text-muted: #B5ADA3;
-  --text-on-maroon: #F3ECE2;
-  --badge-bg: #2B2B26;
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
-  --shadow-card: 0 4px 16px rgba(0, 0, 0, 0.35);
-  --shadow-hover: 0 12px 28px rgba(0, 0, 0, 0.5);
-  --photo-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.65);
-  --overlay-bg: rgba(31, 31, 28, 0.98);
+  /* Soft, Eye-Friendly Warm Charcoal Dark Mode (Default) - Reduces glare & halation */
+  --bg-page: #232320;
+  --bg-section-alt: #1D1D1A;
+  --surface-header: rgba(35, 35, 32, 0.95);
+  --surface-card: #2C2C28;
+  --surface-raised: #353530;
+  --border-subtle: #44443E;
+  --border-card: #3E3E38;
+  --text-primary: #EDE6DC;
+  --text-muted: #B2ADA5;
+  --text-on-maroon: #FFFFFF;
+  --badge-bg: #32322C;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
+  --shadow-card: 0 4px 16px rgba(0, 0, 0, 0.3);
+  --shadow-hover: 0 10px 24px rgba(0, 0, 0, 0.45);
+  --photo-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.55);
+  --overlay-bg: rgba(35, 35, 32, 0.98);
 }
 
 /* Explicit Dark Theme */
 html[data-theme="dark"] {
-  --bg-page: #1F1F1C;
-  --bg-section-alt: #181815;
-  --surface-header: rgba(31, 31, 28, 0.94);
-  --surface-card: #262622;
-  --surface-raised: #2F2F2A;
-  --border-subtle: #3D3D36;
-  --border-card: #383832;
-  --text-primary: #F3ECE2;
-  --text-muted: #B5ADA3;
-  --text-on-maroon: #F3ECE2;
-  --badge-bg: #2B2B26;
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
-  --shadow-card: 0 4px 16px rgba(0, 0, 0, 0.35);
-  --shadow-hover: 0 12px 28px rgba(0, 0, 0, 0.5);
-  --photo-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.65);
-  --overlay-bg: rgba(31, 31, 28, 0.98);
+  --bg-page: #232320;
+  --bg-section-alt: #1D1D1A;
+  --surface-header: rgba(35, 35, 32, 0.95);
+  --surface-card: #2C2C28;
+  --surface-raised: #353530;
+  --border-subtle: #44443E;
+  --border-card: #3E3E38;
+  --text-primary: #EDE6DC;
+  --text-muted: #B2ADA5;
+  --text-on-maroon: #FFFFFF;
+  --badge-bg: #32322C;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
+  --shadow-card: 0 4px 16px rgba(0, 0, 0, 0.3);
+  --shadow-hover: 0 10px 24px rgba(0, 0, 0, 0.45);
+  --photo-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.55);
+  --overlay-bg: rgba(35, 35, 32, 0.98);
 }
 
 /* Explicit Light Theme */
 html[data-theme="light"] {
-  --bg-page: #F1F0EE;
+  --bg-page: #F2F1ED;
   --bg-section-alt: #E8E6E0;
-  --surface-header: rgba(241, 240, 238, 0.94);
+  --surface-header: rgba(242, 241, 237, 0.95);
   --surface-card: #FFFFFF;
-  --surface-raised: #F5F3EF;
-  --border-subtle: #E0DDD4;
-  --border-card: #E8E5DD;
-  --text-primary: #222220;
-  --text-muted: #6B6861;
+  --surface-raised: #E9E7E1;
+  --border-subtle: #DFDBD2;
+  --border-card: #E5E2DA;
+  --text-primary: #242422;
+  --text-muted: #6E6A63;
   --text-on-maroon: #FFFFFF;
   --badge-bg: #EAE6DF;
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
   --shadow-card: 0 4px 16px rgba(0, 0, 0, 0.06);
   --shadow-hover: 0 10px 24px rgba(0, 0, 0, 0.1);
-  --photo-shadow: 0 8px 18px -6px rgba(0, 0, 0, 0.2);
-  --overlay-bg: rgba(241, 240, 238, 0.98);
+  --photo-shadow: 0 8px 18px -6px rgba(0, 0, 0, 0.18);
+  --overlay-bg: rgba(242, 241, 237, 0.98);
 }
 
 /* --------------------------------------------------------------------------
@@ -107,7 +107,7 @@ body {
   overflow-x: hidden;
   /* Safe padding for fixed mobile bottom action bar */
   padding-bottom: calc(76px + env(safe-area-inset-bottom, 0px));
-  transition: background-color 0.25s ease, color 0.25s ease;
+  transition: background-color 0.22s ease, color 0.22s ease;
 }
 
 @media (min-width: 768px) {
@@ -137,17 +137,9 @@ button {
   background: none;
 }
 
-/* Typography Helpers */
-.font-serif {
-  font-family: var(--font-serif);
-}
-
-.text-primary {
-  color: var(--text-primary);
-}
-
-.text-muted {
-  color: var(--text-muted);
+/* Smooth anchor scroll offset so sticky header never hides headings */
+section[id] {
+  scroll-margin-top: calc(var(--header-height) + 16px);
 }
 
 /* Layout Container */
@@ -171,7 +163,7 @@ button {
 .section-header {
   text-align: center;
   max-width: 680px;
-  margin: 0 auto 36px;
+  margin: 0 auto 32px;
 }
 
 @media (min-width: 768px) {
@@ -185,24 +177,18 @@ button {
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.16em;
   color: var(--text-muted);
   margin-bottom: 8px;
 }
 
 .section-title {
   font-family: var(--font-serif);
-  font-size: 28px;
+  font-size: clamp(24px, 5.5vw, 40px);
   font-weight: 800;
-  line-height: 1.2;
+  line-height: 1.22;
   color: var(--text-primary);
   margin-bottom: 12px;
-}
-
-@media (min-width: 768px) {
-  .section-title {
-    font-size: 42px;
-  }
 }
 
 .section-subtitle {
@@ -228,7 +214,7 @@ button {
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border-subtle);
-  transition: background-color 0.25s ease, border-color 0.25s ease;
+  transition: background-color 0.22s ease, border-color 0.22s ease;
 }
 
 .navbar {
@@ -303,7 +289,7 @@ button {
   }
 }
 
-/* Desktop Nav Links */
+/* Desktop Navigation */
 .nav-links {
   display: none;
   align-items: center;
@@ -342,11 +328,11 @@ button {
     backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(18px);
     border-bottom: 1px solid var(--border-subtle);
-    padding: 24px 20px 32px;
-    gap: 16px;
+    padding: 20px 20px 28px;
+    gap: 14px;
     box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35);
     z-index: 99;
-    animation: slideDown 0.22s ease-out;
+    animation: slideDown 0.2s ease-out;
   }
 
   @keyframes slideDown {
@@ -361,9 +347,9 @@ button {
   }
 
   .nav-links.nav-links-open .nav-link {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 600;
-    padding: 10px 0;
+    padding: 8px 0;
     border-bottom: 1px solid var(--border-subtle);
     display: block;
     width: 100%;
@@ -373,7 +359,7 @@ button {
     margin-top: 8px;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
   }
 }
 
@@ -385,6 +371,22 @@ button {
   .nav-links.nav-links-open .nav-drawer-cta {
     display: flex;
   }
+}
+
+/* Drawer theme switch button */
+.theme-drawer-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px;
+  border-radius: var(--radius-full);
+  background-color: var(--surface-card);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+  font-size: 14px;
+  font-weight: 600;
 }
 
 /* Navbar Actions */
@@ -427,18 +429,18 @@ button {
 }
 
 /* Theme icon toggling */
-html[data-theme="light"] .theme-toggle-btn .sun-icon {
-  display: none;
+html[data-theme="light"] .sun-icon {
+  display: none !important;
 }
-html[data-theme="light"] .theme-toggle-btn .moon-icon {
-  display: block;
+html[data-theme="light"] .moon-icon {
+  display: inline-flex !important;
 }
 
-html[data-theme="dark"] .theme-toggle-btn .sun-icon {
-  display: block;
+html[data-theme="dark"] .sun-icon {
+  display: inline-flex !important;
 }
-html[data-theme="dark"] .theme-toggle-btn .moon-icon {
-  display: none;
+html[data-theme="dark"] .moon-icon {
+  display: none !important;
 }
 
 /* Mobile Nav Toggle */
@@ -481,7 +483,7 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
 .btn-maroon {
   background-color: var(--brand-maroon);
   color: var(--text-on-maroon);
-  box-shadow: 0 4px 12px rgba(114, 28, 43, 0.28);
+  box-shadow: 0 4px 12px rgba(132, 34, 52, 0.28);
 }
 
 .btn-maroon:hover {
@@ -525,7 +527,6 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
   min-height: 36px;
 }
 
-/* Hide desktop menu button on narrow phones to preserve navbar space */
 .btn-nav-menu {
   display: none;
 }
@@ -540,7 +541,7 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
    1. Hero Section
    -------------------------------------------------------------------------- */
 .hero-section {
-  padding: 28px 0 44px;
+  padding: 24px 0 40px;
   position: relative;
   overflow: hidden;
 }
@@ -554,7 +555,7 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
 .hero-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 32px;
+  gap: 28px;
   align-items: center;
 }
 
@@ -578,7 +579,7 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--text-muted);
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 .hero-tagline-badge span.accent {
@@ -587,12 +588,19 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
 
 .hero-heading {
   font-family: var(--font-serif);
-  font-size: clamp(30px, 7.5vw, 56px);
-  font-weight: 900;
-  line-height: 1.14;
+  font-size: clamp(27px, 6.5vw, 52px);
+  font-weight: 800;
+  line-height: 1.2;
   color: var(--text-primary);
   letter-spacing: -0.01em;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
+}
+
+@media (max-width: 480px) {
+  .hero-heading {
+    font-size: 28px;
+    line-height: 1.22;
+  }
 }
 
 .hero-description {
@@ -600,7 +608,7 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
   color: var(--text-muted);
   line-height: 1.65;
   max-width: 580px;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 
 @media (min-width: 768px) {
@@ -631,7 +639,6 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
 
 .hero-image-frame {
   position: relative;
-  /* 16/10 on mobile so it doesn't take 3 viewport heights */
   aspect-ratio: 16 / 10;
   border-radius: var(--radius-md);
   overflow: hidden;
@@ -685,7 +692,7 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
 
 .hero-floating-badge .badge-value {
   font-family: var(--font-serif);
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 800;
   color: var(--text-primary);
 }
@@ -700,11 +707,11 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
    2. About Section
    -------------------------------------------------------------------------- */
 .about-section {
-  padding: 56px 0;
+  padding: 50px 0;
   background-color: var(--bg-section-alt);
   border-top: 1px solid var(--border-subtle);
   border-bottom: 1px solid var(--border-subtle);
-  transition: background-color 0.25s ease;
+  transition: background-color 0.22s ease;
 }
 
 @media (min-width: 768px) {
@@ -716,7 +723,7 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
 .about-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 28px;
+  gap: 24px;
   align-items: center;
 }
 
@@ -731,7 +738,7 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
   background-color: var(--surface-card);
   border: 1px solid var(--border-card);
   border-radius: var(--radius-md);
-  padding: 24px;
+  padding: 22px;
   box-shadow: var(--shadow-card);
 }
 
@@ -744,9 +751,9 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
 
 .about-card h3 {
   font-family: var(--font-serif);
-  font-size: 22px;
+  font-size: 21px;
   color: var(--text-primary);
-  margin-bottom: 14px;
+  margin-bottom: 12px;
   line-height: 1.25;
 }
 
@@ -759,7 +766,7 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
 .about-card p {
   color: var(--text-muted);
   font-size: 14px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   line-height: 1.65;
 }
 
@@ -802,7 +809,7 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
    3. Featured Dishes Section
    -------------------------------------------------------------------------- */
 .featured-section {
-  padding: 56px 0;
+  padding: 50px 0;
 }
 
 @media (min-width: 768px) {
@@ -814,14 +821,20 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
 .dishes-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 16px;
+  gap: 14px;
 }
 
-/* Phone 2-column layout above 360px */
-@media (min-width: 360px) {
+/* Responsive 2-column on mobile phones */
+@media (min-width: 350px) {
   .dishes-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 600px) {
+  .dishes-grid {
+    gap: 16px;
   }
 }
 
@@ -842,7 +855,7 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
   background-color: var(--surface-card);
   border: 1px solid var(--border-card);
   border-radius: var(--radius-md);
-  padding: 14px;
+  padding: 12px;
   display: flex;
   flex-direction: column;
   transition: var(--transition);
@@ -850,9 +863,9 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
   box-shadow: var(--shadow-card);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   .dish-card {
-    padding: 20px;
+    padding: 18px;
   }
 }
 
@@ -864,8 +877,8 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
 
 .dish-badge {
   position: absolute;
-  top: 12px;
-  left: 12px;
+  top: 10px;
+  left: 10px;
   background-color: var(--brand-maroon);
   color: var(--text-on-maroon);
   font-size: 9px;
@@ -879,19 +892,19 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
 
 @media (min-width: 768px) {
   .dish-badge {
-    top: 16px;
-    left: 16px;
+    top: 14px;
+    left: 14px;
     font-size: 10px;
     padding: 4px 10px;
   }
 }
 
 .dish-photo-wrap {
-  width: 96px;
-  height: 96px;
+  width: 90px;
+  height: 90px;
   border-radius: var(--radius-full);
   overflow: hidden;
-  margin: 6px auto 12px;
+  margin: 6px auto 10px;
   box-shadow: var(--photo-shadow);
   background-color: var(--surface-raised);
   flex-shrink: 0;
@@ -899,9 +912,9 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
 
 @media (min-width: 600px) {
   .dish-photo-wrap {
-    width: 130px;
-    height: 130px;
-    margin: 8px auto 16px;
+    width: 125px;
+    height: 125px;
+    margin: 8px auto 14px;
   }
 }
 
@@ -928,10 +941,10 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
 
 .dish-name {
   font-family: var(--font-serif);
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 700;
   color: var(--text-primary);
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   line-height: 1.3;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -939,38 +952,39 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
   overflow: hidden;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   .dish-name {
-    font-size: 18px;
-    margin-bottom: 8px;
+    font-size: 17px;
+    margin-bottom: 6px;
   }
 }
 
 .dish-desc {
-  font-size: 12px;
+  font-size: 11px;
   color: var(--text-muted);
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   line-height: 1.45;
   flex: 1;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   .dish-desc {
     font-size: 13px;
-    margin-bottom: 16px;
+    -webkit-line-clamp: 3;
+    margin-bottom: 14px;
   }
 }
 
 .dish-footer {
   border-top: 1px solid var(--border-subtle);
-  padding-top: 10px;
+  padding-top: 8px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
 }
 
 @media (min-width: 480px) {
@@ -978,26 +992,40 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    gap: 8px;
   }
 }
 
 .dish-price {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 800;
   color: var(--text-primary);
   white-space: nowrap;
 }
 
+@media (min-width: 600px) {
+  .dish-price {
+    font-size: 15px;
+  }
+}
+
 .dish-order-link {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 700;
   color: var(--text-on-maroon);
   background-color: var(--brand-maroon);
-  padding: 6px 12px;
+  padding: 5px 10px;
   border-radius: var(--radius-full);
   transition: var(--transition);
   text-align: center;
   display: inline-block;
+}
+
+@media (min-width: 600px) {
+  .dish-order-link {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
 }
 
 .dish-order-link:hover {
@@ -1006,7 +1034,7 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
 
 .featured-cta-box {
   text-align: center;
-  margin-top: 36px;
+  margin-top: 32px;
 }
 
 @media (min-width: 768px) {
@@ -1019,11 +1047,11 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
    4. Gallery Section
    -------------------------------------------------------------------------- */
 .gallery-section {
-  padding: 56px 0;
+  padding: 50px 0;
   background-color: var(--bg-section-alt);
   border-top: 1px solid var(--border-subtle);
   border-bottom: 1px solid var(--border-subtle);
-  transition: background-color 0.25s ease;
+  transition: background-color 0.22s ease;
 }
 
 @media (min-width: 768px) {
@@ -1035,7 +1063,7 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
+  gap: 10px;
 }
 
 @media (min-width: 768px) {
@@ -1081,13 +1109,12 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 12px;
+  padding: 10px;
   opacity: 0;
   transition: opacity 0.25s ease;
 }
 
 @media (hover: none) {
-  /* On touch devices, keep a gentle overlay visible */
   .gallery-overlay {
     opacity: 0.9;
     background: linear-gradient(180deg, transparent 55%, rgba(20, 20, 18, 0.82) 100%);
@@ -1123,7 +1150,7 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
    5. Opening Hours & 6. Location Section
    -------------------------------------------------------------------------- */
 .info-section {
-  padding: 56px 0;
+  padding: 50px 0;
 }
 
 @media (min-width: 768px) {
@@ -1135,7 +1162,7 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
 .info-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 24px;
+  gap: 20px;
 }
 
 @media (min-width: 860px) {
@@ -1149,7 +1176,7 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
   background-color: var(--surface-card);
   border: 1px solid var(--border-card);
   border-radius: var(--radius-md);
-  padding: 24px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1167,19 +1194,19 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .info-icon {
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
   border-radius: var(--radius-full);
   background-color: var(--surface-raised);
   border: 1px solid var(--border-subtle);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
+  font-size: 17px;
   flex-shrink: 0;
 }
 
@@ -1199,7 +1226,7 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
 .hours-table {
   width: 100%;
   border-collapse: collapse;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .hours-table tr {
@@ -1211,7 +1238,7 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
 }
 
 .hours-table td {
-  padding: 10px 0;
+  padding: 9px 0;
   font-size: 13px;
 }
 
@@ -1234,7 +1261,7 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
 .location-address {
   font-size: 14px;
   color: var(--text-primary);
-  margin-bottom: 16px;
+  margin-bottom: 14px;
   line-height: 1.6;
 }
 
@@ -1269,10 +1296,10 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
    7. Contact Section
    -------------------------------------------------------------------------- */
 .contact-section {
-  padding: 56px 0;
+  padding: 50px 0;
   background-color: var(--bg-section-alt);
   border-top: 1px solid var(--border-subtle);
-  transition: background-color 0.25s ease;
+  transition: background-color 0.22s ease;
 }
 
 @media (min-width: 768px) {
@@ -1284,7 +1311,7 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
 .contact-channels {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 16px;
+  gap: 14px;
   max-width: 900px;
   margin: 0 auto;
 }
@@ -1300,7 +1327,7 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
   background-color: var(--surface-card);
   border: 1px solid var(--border-card);
   border-radius: var(--radius-md);
-  padding: 22px;
+  padding: 20px;
   text-align: center;
   transition: var(--transition);
   box-shadow: var(--shadow-card);
@@ -1312,8 +1339,8 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
 }
 
 .channel-icon {
-  font-size: 26px;
-  margin-bottom: 10px;
+  font-size: 24px;
+  margin-bottom: 8px;
 }
 
 .channel-title {
@@ -1321,13 +1348,13 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
   font-size: 17px;
   font-weight: 700;
   color: var(--text-primary);
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .channel-detail {
   font-size: 13px;
   color: var(--text-muted);
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 /* --------------------------------------------------------------------------
@@ -1335,12 +1362,12 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
    -------------------------------------------------------------------------- */
 .site-footer {
   border-top: 1px solid var(--border-subtle);
-  padding: 44px 0 28px;
+  padding: 40px 0 24px;
   text-align: center;
 }
 
 .footer-brand {
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 .footer-copy {
@@ -1375,9 +1402,9 @@ html[data-theme="dark"] .theme-toggle-btn .moon-icon {
 
 .mobile-bottom-bar .btn {
   flex: 1;
-  padding: 10px 12px;
+  padding: 10px 10px;
   font-size: 13px;
-  min-height: 44px; /* Apple iOS Human Interface Touch Target */
+  min-height: 44px;
   border-radius: var(--radius-full);
 }
 
