@@ -1,45 +1,49 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#4A1125" />
-      <stop offset="50%" stop-color="#24181E" />
-      <stop offset="100%" stop-color="#152D21" />
+      <stop offset="0%" stop-color="#2D121B" />
+      <stop offset="45%" stop-color="#1E1E1B" />
+      <stop offset="100%" stop-color="#16221A" />
     </linearGradient>
-    <radialGradient id="glow" cx="50%" cy="40%" r="60%">
-      <stop offset="0%" stop-color="#6E1B3A" stop-opacity="0.6"/>
-      <stop offset="100%" stop-color="#141012" stop-opacity="0.95"/>
+    <radialGradient id="ambience" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#842234" stop-opacity="0.45"/>
+      <stop offset="60%" stop-color="#232320" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#1A1A18" stop-opacity="1"/>
     </radialGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E2D4C0"/>
+      <stop offset="100%" stop-color="#CBB79F"/>
+    </linearGradient>
   </defs>
-  <rect width="1200" height="800" fill="url(#bg)" />
-  <circle cx="600" cy="380" r="320" fill="url(#glow)" />
   
-  <!-- Subtle rattan ring pattern -->
-  <circle cx="600" cy="360" r="240" fill="none" stroke="#C8A97E" stroke-width="1.5" stroke-dasharray="6,8" opacity="0.4" />
-  <circle cx="600" cy="360" r="210" fill="none" stroke="#C8A97E" stroke-width="0.75" opacity="0.3" />
+  <rect width="1200" height="800" fill="url(#bg)" />
+  <circle cx="600" cy="380" r="340" fill="url(#ambience)" />
+  
+  <!-- Subtle decorative architectural rings -->
+  <circle cx="600" cy="370" r="260" fill="none" stroke="#CBB79F" stroke-width="1.5" stroke-dasharray="6,8" opacity="0.35" />
+  <circle cx="600" cy="370" r="230" fill="none" stroke="#CBB79F" stroke-width="0.75" opacity="0.25" />
 
-  <!-- Logo Mark -->
+  <!-- Logo Crest -->
   <g transform="translate(600, 240)">
-    <circle cx="0" cy="0" r="44" fill="#6E1B3A" stroke="#C8A97E" stroke-width="2" />
-    <text x="0" y="14" font-family="Playfair Display, Georgia, serif" font-size="40" font-weight="bold" fill="#F8F6F4" text-anchor="middle">B</text>
+    <circle cx="0" cy="0" r="48" fill="#842234" stroke="#CBB79F" stroke-width="2" />
+    <text x="0" y="16" font-family="'Bodoni Moda', 'Playfair Display', Georgia, serif" font-size="44" font-weight="800" fill="#EDE6DC" text-anchor="middle">B</text>
   </g>
 
-  <!-- Category Tag -->
-  <text x="600" y="340" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" letter-spacing="4" fill="#C8A97E" text-anchor="middle" text-transform="uppercase">
-    Lounge • BREEZE KADUNA
+  <!-- Tagline -->
+  <text x="600" y="340" font-family="'Inter', system-ui, sans-serif" font-size="14" font-weight="700" letter-spacing="5" fill="#CBB79F" text-anchor="middle" text-transform="uppercase">
+    LOUNGE &amp; COURTYARD • KADUNA
   </text>
 
   <!-- Title -->
-  <text x="600" y="400" font-family="Playfair Display, Georgia, serif" font-size="44" font-weight="600" fill="#F8F6F4" text-anchor="middle">
+  <text x="600" y="410" font-family="'Bodoni Moda', 'Playfair Display', Georgia, serif" font-size="52" font-weight="700" fill="#EDE6DC" text-anchor="middle">
     Verdant Terrace Lounge
   </text>
 
   <!-- Subtitle -->
-  <text x="600" y="445" font-family="system-ui, -apple-system, sans-serif" font-size="20" fill="#A7979F" text-anchor="middle">
-    Kaduna Evening Ambiance
+  <text x="600" y="460" font-family="'Inter', system-ui, sans-serif" font-size="20" font-weight="400" fill="#B2ADA5" text-anchor="middle">
+    Candlelit Evenings &amp; Al Fresco Dining
   </text>
 
-  <!-- Footer note -->
-  <text x="600" y="720" font-family="system-ui, -apple-system, sans-serif" font-size="14" letter-spacing="2" fill="#6C5D64" text-anchor="middle" text-transform="uppercase">
-    Photography Asset Placeholder • Replace with high-res photograph
-  </text>
+  <!-- Accent Divider -->
+  <line x1="500" y1="500" x2="700" y2="500" stroke="#842234" stroke-width="3" stroke-linecap="round" />
 </svg>

@@ -11,7 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // 2. Light / Dark Theme Management
-  const themeToggleBtns = document.querySelectorAll('.theme-toggle-btn');
+  const themeToggleBtns = document.querySelectorAll('.theme-toggle-btn, .theme-drawer-btn');
+  const navLinks = document.querySelector('.nav-links');
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
   
   function getCurrentTheme() {
     return document.documentElement.getAttribute('data-theme') || 'dark';
@@ -31,6 +33,14 @@ document.addEventListener('DOMContentLoaded', () => {
       const current = getCurrentTheme();
       const next = current === 'dark' ? 'light' : 'dark';
       setTheme(next);
+
+      // If user clicked the theme switch inside the mobile drawer, close the drawer
+      if (btn.classList.contains('theme-drawer-btn') && navLinks) {
+        navLinks.classList.remove('nav-links-open');
+        if (mobileMenuBtn) {
+          mobileMenuBtn.setAttribute('aria-expanded', 'false');
+        }
+      }
     });
   });
 
@@ -48,9 +58,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // 3. Mobile Navigation Drawer Toggle
-  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-  const navLinks = document.querySelector('.nav-links');
-
   if (mobileMenuBtn && navLinks) {
     mobileMenuBtn.addEventListener('click', (e) => {
       e.stopPropagation();
